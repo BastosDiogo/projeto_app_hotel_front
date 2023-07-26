@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='xgeral.css') }}">
+    <link rel="shortcut icon" href="static\ico\logo_navegador.ico" type="image">
+  </head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1>
+                <a href="/">
+                    <img id="logo" src="static\imagens\logo_limpa.png">
+                </a>
+                <h2 class="titulo_site">Encontre sua próxima Hospedagem</h2>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/cadastrar-usurario">Login</a></li>
+                    <!-- <li><a href="/verificar-admin">Área Admin</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul id="messages" class="list-unstyled">
+                {% for message in messages %}
+                    <li class="alert-success">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    <main>
+        {% block conteudo %} {% endblock %}
+    </main>
+    <footer>
+        <a href="/">    
+                <img id="logo" src="static\imagens\logo_limpa_branca.png">
+            </a>
+            <p class="texto-rodape">
+                ®Copyright - Diogo Bastos - Todos os direitos reservados
+            </p>
+    </footer>
+</body>
+</html>
