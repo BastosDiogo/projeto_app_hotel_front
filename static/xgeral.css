@@ -1,0 +1,192 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Novo template
+*/
+
+header {
+	background: #003b95;
+	padding: 10px 0;
+}
+
+
+.titulo_site {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+  background: #003b95;
+  /* background: #006ce4 */
+}
+
+
+#logo {
+    width: 120px;
+    height: 100px;
+    text-align: center;
+  }
+
+nav {
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 30px;
+    background-color: #C78C19;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: rgb(0,0,0);
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+main {
+    background: rgb(255,255,255);
+    /* background: rgb(0, 0, 0); */
+  }
+
+/* INÍCIO PAGINA PRINCIPAL */
+.conteudo {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+  background: rgb(0, 100, 5);
+  /* background: #006ce4 */
+}
+
+.titulo_destino {
+    font-size: 20px;
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.retangulo_1 {
+    position: relative;
+	width: 940px;
+	margin: 0 auto;
+    background: rgb(0, 200, 5);
+    border-color: #C78C19;
+    text-align: center;
+    /* border-width: 10px; #####Alterar */
+}
+
+
+.figura_retangulo_1 {
+  width: 100px;
+  height: 50px;
+  padding: 5px 5px 5px 10px;
+}
+
+
+.retangulo_2 {
+  position: relative;
+width: 940px;
+margin: 0 auto;
+  background: rgb(200, 0, 200);
+  border-color: #C78C19;
+  text-align: center;
+  /* border-width: 10px; #####Alterar */
+}
+
+
+.figura_retangulo_2 {
+  width: 30%;
+  height: 50px;
+  padding: 5px 5px 5px 10px;
+}
+
+.retangulo_3 {
+  position: relative;
+width: 940px;
+margin: 0 auto;
+  background: rgb(200, 0, 200);
+  border-color: #C78C19;
+  text-align: center;
+  /* border-width: 10px; #####Alterar */
+}
+
+
+.figura_retangulo_3 {
+  width: 20%;
+  height: 50px;
+  padding: 5px 5px 5px 10px;
+}
+
+
+/* FIM DA PÁGINA INICIAL */
+
+footer {
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: #003b95;
+    
+    /* height: 500px; */
+    /* background:url(https://github.com/BastosDiogo/imagens-apps/blob/master/app-mercado/background.png?raw=true); */
+    box-sizing: border-box;
+  }
